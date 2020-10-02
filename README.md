@@ -1,41 +1,37 @@
 # portfolio
 
-Этот репозиторий содержит несколько проектов верстки HTML-страниц в соответствующих папках:
+This repository contains several different projects in the corresponding folders:
 * page1
 * page2
 * page3
 * page4
 * landing
 
-Верстка адаптивная и кроссбраузерная по методологии БЭМ. Использованы SASS, `npm` `gulp` (без JavaScript).
+### Getting started
 
-Проект `landing` сделан пока только в десктопном варианте.
+1. Ensure you have this pre-requisites:
 
-### Начало работы
-
-1. Проверить наличие :
-
-    *  Свежих версий `node`, `npm` and `npx` 
+    *  Latest versions of node, npm and npx 
         * `node --version`
         * `npm --version`
         * `npx --version`
-        * При отсутствии см. инструции по установке https://nodejs.org/en/
+        * If they are not installed, follow the instructions https://nodejs.org/en/
 
-    * Свежей версии `gulp-cli` 
+    * Latest version of gulp-cli 
         * `gulp --version`
 
-        * При отсутствии см. https://gulpjs.com/docs/en/getting-started/quick-start 
+        * If not installed, see gulp docs https://gulpjs.com/docs/en/getting-started/quick-start 
 
 
-2. Клонировать репозиторий https://github.com/timoshenko4618/portfolio.git
+2. Clone repository https://github.com/timoshenko4618/portfolio.git
 
-3. Открыть папку нужного проекта в редакторе кода.
+3. Open required project folder in your editor
 
-4. Установить npm-пакеты  `npm install`
+4. Install npm packages  `npm install`
 
 
-### Разработка
+### Development
 
-* Запустить Gulp `gulp` (стартовая страница откроется в браузере)
-* Редактируемые файлы лежат в папке `src`
-* Рельтаты появляются в папке`dist`
+* Run Gulp `gulp` (start page opens in the default browser)
+* Edit files in `src` folder
+* View result files in `dist` folder
