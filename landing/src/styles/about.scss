@@ -1,0 +1,18 @@
+.about {
+    
+    &__button{
+        position: relative;
+        width: 10em;
+        height: 2.8em;
+        margin: 30px 0 0;
+
+        &--upper {            
+            margin-right: auto;
+        }
+
+        &--lower {
+            margin-left: auto;
+        } 
+    }
+
+}

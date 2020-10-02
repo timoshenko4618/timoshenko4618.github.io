@@ -1,0 +1,139 @@
+.slider {
+  display: block;
+  margin: 0;
+  position: relative;  
+
+  &__arrow-next {
+    display: block;
+  }
+
+  &__arrow-prev {
+    display: block;
+  }
+
+  &__feedback-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 18em;
+    height: 35em;
+    margin-right: 1em;
+    margin-top: 2em;
+    padding: 1em;
+    color: #000;
+    background: rgba($color: #fff, $alpha: 1.0);
+    opacity: 0.5;
+    border-radius: 3.5em;
+    font-size: 1em;
+    font-weight: normal;
+    transition: 0.5s;
+
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      .feedback__item-button {
+        display: block;
+      }
+
+    }
+
+
+  }
+
+  &__gallery {
+    display: block;
+    position: relative;
+    height: 615px;
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 1070px;
+    border-radius: 30px;
+    background: #e8e3ea;
+    text-align: center;
+    visibility: visible;
+    margin-right: 100px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    transition: left 1s cubic-bezier(0.37, 0, 0.63, 1);
+  }
+
+  &__feedback-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    transition: left 1s cubic-bezier(0.37, 0, 0.63, 1);
+  }
+
+  &__input {
+    display: none;
+
+    &:nth-child(1):checked ~ .slider__arrow-next .slider__label:nth-child(2),
+    &:nth-child(2):checked ~ .slider__arrow-next .slider__label:nth-child(3),
+    &:nth-child(3):checked ~ .slider__arrow-next .slider__label:nth-child(1) {
+      visibility: visible;
+    }
+
+    &:nth-child(1):checked ~ .slider__arrow-prev .slider__label:nth-child(3),
+    &:nth-child(2):checked ~ .slider__arrow-prev .slider__label:nth-child(1),
+    &:nth-child(3):checked ~ .slider__arrow-prev .slider__label:nth-child(2) {
+      visibility: visible;
+    }
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}):checked ~ .slider__gallery .slider__item-wrapper {
+        left: ($i - 1) * (-1170px);
+      }
+    }
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}):checked ~ .slider__gallery .slider__feedback-item-wrapper {
+        left: ($i - 1) * (-19em);
+      }
+    }
+  }
+
+  &__label {
+    color: #fff;
+    cursor: pointer;
+    visibility: hidden;
+    font-size: 80px;
+    position: absolute;
+    top: 200px;
+
+    & img {
+      width: 100px;
+    }
+
+    &--next {
+      color: rgb(229, 255, 0);
+      right: -150px;
+    }
+
+    &--prev {
+      color: rgb(255, 0, 55);
+      left: -150px;
+    }
+  }
+}

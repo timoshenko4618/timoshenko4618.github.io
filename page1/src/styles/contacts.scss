@@ -1,0 +1,63 @@
+.contacts {
+  display: flex;
+  padding: 150px 0 82px;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__appointment-link {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    padding: 16px 38px;
+    border: 1px solid #00c4aa;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-left: 80px;
+  }
+
+  &__hint {
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.38);
+    margin-top: -7px;
+  }
+
+  &__icon {
+    svg {
+      display: block;
+    }
+  }
+
+  &__number {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 49px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__text {
+    text-align: right;
+    margin-left: 14px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__appointment-link {
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 41px 0;
+  }
+}

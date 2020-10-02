@@ -1,0 +1,164 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 144px 0 175px 0;
+  position: relative;
+  background-color: #ffffff;
+  // background-image: url(./assets/img/background_near.svg), url(./assets/img/background_middle.svg), url(./assets/img/background_back.svg);
+  background-image: url(./assets/img/art.svg);
+  background-size: auto 100%;
+  // background-size: 100%, 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  // background-position: top right, top right, top right;
+
+  &__button {
+    margin-top: 16px;
+  }
+
+  &__link-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 57px;
+    right: 120px;
+  }
+
+  &__info {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__header {
+    &-primary {
+      margin-top: -9px;
+      font-weight: 200;
+      font-size: 93px;
+      line-height: 140px;
+      letter-spacing: -1.5px;
+      color: rgba(0, 0, 0, 0.38);
+      background: #fff;
+      width: max-content;
+    }
+
+    &-secondary {
+      font-weight: 800;
+      font-size: 56px;
+      line-height: 85px;
+      letter-spacing: -0.5px;
+      color: #03dac4;
+      background: #fff;
+      width: max-content;
+    }
+  }
+
+  &__text-primary {
+    width: 384px;
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.6);
+    background: #fff;
+  }
+
+  &__text-secondary {
+    width: 384px;
+    margin-top: 130px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 29px;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+    background: #fff;
+  }
+}
+
+@media screen and (max-height: $height_750) {
+  .main {
+    // background-image: url(./assets/img/art.svg);
+    background-size: 80%;
+  }
+}
+
+@media screen and (max-width: $width_1250) {
+  .main {
+    background-image: url(./assets/img/art_without_girl.svg);
+  }
+}
+
+@media screen and (max-width: $width_1100) {
+  .main {
+    background-size: 90%;
+    padding-left: 60px;
+    padding-top: 40px;
+
+    &__header {
+      &-primary {
+        font-size: 80px;
+        line-height: 100px;
+      }
+
+      &-secondary {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $width_550) {
+  .main {
+    padding: 30px;
+    background-image: none;
+
+    &__header {
+      &-primary {
+        font-size: 80px;
+        line-height: 100px;
+      }
+
+      &-secondary {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__link-toolbar {
+      width: 100%;
+      padding: 10px;
+      bottom: 0;
+      right: auto;
+      position: fixed;
+      justify-content: space-between;
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &__text-primary {
+      width: 100%;
+    }
+
+    &__text-secondary {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+$width_1250: 1250px;
+$width_1100: 1100px;
+$width_550: 550px;
+$width_480: 480px;
+$height_750: 750px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}

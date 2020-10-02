@@ -1,0 +1,29 @@
+.timetable {
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0 13px;
+    border-bottom: 1px solid currentColor;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__day {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &__hours {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

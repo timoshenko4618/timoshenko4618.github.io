@@ -1,0 +1,80 @@
+.feedback {
+
+    font-family: 'Play', sans-serif;
+
+    &__client-face {
+        margin-top: -3em;
+        text-align: center;
+        
+
+        img {
+            width: 7em;
+            height: 7em;
+            border-radius: 2.5em;
+            box-shadow: 0 0 2em rgba(0,0,0,0.5);
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &-button {
+            width: 35%;
+        }
+
+        &-text {
+            color: #fff;
+            font-size: 1.6em;
+            font-weight: normal;
+            margin-right: 1.2em;
+        }
+    }
+
+    &__item-button {
+        display: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        position: absolute;
+        bottom: -12px;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 20px;
+        opacity: 1;
+        background-image: linear-gradient(to right, #33ebcc 0%, #44a8eb 51%, #33ebcc 100%);
+
+        &:hover {
+        background-position: right center;
+        }
+    }
+
+    &__item-text {
+        display: block;
+        font-size: 1.1em;        
+    }
+
+    &__slider {
+        position: relative;
+        width: 1200px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;       
+    }
+
+    &__title {
+        margin-top: 30px;
+        font-family: 'Play', sans-serif;      
+        text-align: center;
+        font-size: 43px;
+        font-weight: bold;
+        color:  #ff8791;
+    }
+}

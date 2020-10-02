@@ -1,0 +1,100 @@
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  position: relative;
+  background-color: #0000b6;
+  background-image: url(./assets/img/Cube_small.svg), url(./assets/img/Main_group.svg);
+  background-size: 12%, 100%;
+  background-repeat: no-repeat;
+  background-position: 112px 11px, bottom right;
+
+  &__info {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+  &__header {
+    margin: 268px auto 0 0;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 85px;
+    color: #fff;
+  }
+
+  &__text {
+    max-width: 457px;
+    height: auto;
+    margin: 42px auto 0 0;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__button {
+    margin: 42px auto 0 0;
+  }
+
+  &__button-group {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 171px auto 0 auto;
+    padding-left: 20px;
+  }
+
+  &__subheader {
+    margin: -6px auto 0 0;
+    height: 64px;
+    font-size: 46px;
+    line-height: 69px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (max-width: $width_480) {
+  .main {
+    width: 100vw;
+    min-height: 100vh;
+    padding-left: 0;
+    padding-bottom: 200px;
+    background-size: 23%, 140%;
+    background-repeat: no-repeat;
+    background-position: top right, -100px bottom;
+
+    &__button {
+      margin-top: 50px;
+    }
+
+    &__button-group {
+      width: 100%;
+      flex-direction: column;
+      position: absolute;
+      bottom: 20px;
+      margin: 0;
+      padding: 0 10px;
+      justify-content: space-between;
+    }
+
+    &__info {
+      padding: 0 20px;
+    }
+
+    &__header {
+      margin-top: 60px;
+    }
+
+    &__subheader {
+      margin-top: 20px;
+      font-size: 30px;
+    }
+
+    &__text {
+      margin-top: 20px;
+    }
+  }
+}

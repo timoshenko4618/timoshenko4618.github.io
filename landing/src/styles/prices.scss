@@ -1,0 +1,114 @@
+.prices {
+    display: grid;
+    grid-template-areas: "title form"
+                         "pricelist form ";
+    // width: 100%;
+    grid-template-columns: 62% 38%;
+    grid-template-rows: 8% 92%;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: 'Play', sans-serif;
+    font-size: 12px;
+
+    &__button-ask {
+        position: relative;
+        margin-top: 12px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    &__button-call {
+        position: relative;
+        margin-top: 80px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    &__form {
+        grid-area: form;
+        color: #fff;
+        font-size: 1.6em;
+        padding: 40px 30px;
+
+        h1 {
+            font-size: 1.3em;
+            text-align: center;
+            padding-bottom: 1.3em;
+        }
+    }
+
+    &__input {
+        // height: 3em;
+        background-color: #fff;
+        padding: 1.5em 0;
+        border-radius: 1em;
+        border: 0;
+        margin-top: 30px;
+
+        &::placeholder {
+            padding-left: 40px;
+            font-family: 'Play', sans-serif;
+            font-size: 1.6em;
+            color: #999;            
+        }        
+    }
+
+    &__list {
+        grid-area: pricelist;
+        border-radius: 70px;
+        padding: 40px 30px 20px;
+        background: rgba($color: #fff, $alpha: 0.5);
+
+        &-item {
+            height: 6.5em;
+            margin-top: 5px;
+            display: grid;
+            grid-template-areas: "name value"
+                                 "comment comment";
+
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 45% 55%;           
+            
+            &:first-child {
+                margin-top: 0;
+            }
+        }               
+    }
+
+    &__comment {
+        grid-area: comment;
+        color: rgba($color: #414141, $alpha: 1.0);
+        font-size: 1.5em;
+    }
+    
+    &__name {
+        grid-area: name;
+        color: #fff;
+        font-size: 2.3em;
+    }
+
+    &__value {
+        grid-area: value;
+        color: rgba($color: #2c1079, $alpha: 1.0);
+        font-size: 2.3em;
+        font-weight: bold;
+    }
+    
+    &__title {
+        grid-area: title;
+        color: #ff8791;
+        font-size: 2em;
+        font-style: italic;
+
+        span {
+            margin-right: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: normal;
+            color: #fff;
+        }
+    }
+
+    
+}

@@ -1,0 +1,93 @@
+.company {
+  display: grid;
+  font-family: 'Play', sans-serif;
+  grid-template-areas:
+    "title info"
+    "gallery info"
+    "gallery info";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+
+  &__controls {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  &__gallery {
+    grid-area: gallery;
+
+    & input {
+      display: none;
+    }
+  }
+
+  &__info {
+    grid-area: info;
+    text-align: left;
+    padding: 20px 20px 20px 0;
+
+    h1 {
+      margin: 0 0 15px 0;
+      font-size: 26px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-inline-start: 0;
+      font-size: 17px;
+    }
+  }
+
+  &__label {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #f80;
+    border-radius: 50%;
+    background: #fff;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  @for $i from 1 through 3 {
+    &__slider-input:nth-child(#{$i}):checked ~ &__slider &__slider-item:nth-child(#{$i}) {
+      display: block;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    &__slider-input:nth-child(#{$i}):checked ~ &__controls &__label:nth-child(#{$i})::before {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f80;
+      z-index: 1;
+    }
+  }
+
+  &__slider-item {
+    display: none;
+  }
+
+  &__title {
+    grid-area: title;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: left;
+
+    h1 {
+      margin: 0;
+      font-size: 52px;
+    }
+
+  }
+}

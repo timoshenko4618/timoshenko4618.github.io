@@ -1,0 +1,62 @@
+.main {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 300px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  justify-content: center;
+
+  &__header {
+    grid-column: span 2;
+  }
+
+  &__title {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  &__department {
+    $gradient: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32));
+    color: #ffffff;
+
+    &--dermatologic {
+      background: $gradient, url(./assets/img/2.jpg);
+    }
+
+    &--aestetic {
+      background: $gradient, url(./assets/img/1.jpg);
+    }
+
+    &--pediatric {
+      background: $gradient, url(./assets/img/3.jpg);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__header {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    &__header {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    &__header {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &__title {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+}

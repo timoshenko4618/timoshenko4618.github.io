@@ -1,0 +1,85 @@
+.works {
+    background:#fff;
+    border-radius: 10px;
+    padding: 10px 30px 44px;
+
+    &__button {
+        position: relative;
+
+        &-ads {
+            position: relative;
+            bottom: -41px;
+            left: -80px;
+          }
+      
+          &-design {
+            position: relative;  
+            bottom: -40px;
+            left: 120px;
+          }  
+      
+          &-polygraphy {
+            position: relative;  
+            bottom: -137px;
+            left: 49px;
+          }
+      
+          &-sites {
+            position: relative;  
+            bottom: -76px;
+            left: -11px;
+          }
+    }
+
+    &__cards {
+        margin-top: 50px;
+        position: relative;
+        display: grid;
+        grid-template-areas:"design sites"
+                            "design sites"
+                            "polygraphy sites"
+                            "polygraphy ads"
+                            "polygraphy ads";
+
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        
+        font-family: 'Play', sans-serif;
+        font-size: 24px;
+        color: rgb(255, 145, 0);
+
+        & h1 {
+            margin: 8px 0;
+            font-size: 30px;                
+            color: rgb(0, 162, 255);
+            text-transform: uppercase;
+        }   
+    }
+
+    &--design {
+        grid-area: design;   
+    }
+
+    &--sites {
+        grid-area: sites;    
+    }
+
+    &--polygraphy {
+        grid-area: polygraphy;
+    }
+
+    &--ads {
+        grid-area: ads;
+    }
+
+    
+    &__title {
+        font-family: 'Play', sans-serif;      
+        text-align: center;
+        font-size: 37px;
+        color:  #ff8791;
+    }
+
+
+}

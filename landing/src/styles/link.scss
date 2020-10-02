@@ -1,0 +1,47 @@
+.link {  
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;    
+    margin-right: 30px;
+    font-size: 28px;
+    color: #9754a9;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 0;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      content: attr(data-hover);
+      transition: width 0.5s;
+      white-space: nowrap;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      width: 100%;
+    }    
+
+    &--active::before {
+      width: 100%;      
+      }    
+  }
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;  
+    margin-right: 41px;
+    font-size: 47px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

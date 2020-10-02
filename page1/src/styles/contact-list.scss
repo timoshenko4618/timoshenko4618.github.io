@@ -1,0 +1,25 @@
+.contact-list {
+  &__icon {
+    margin-right: 14px;
+    width: 20px;
+
+    svg {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

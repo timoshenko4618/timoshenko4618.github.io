@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="rectangle.svg"
+   id="svg1210"
+   version="1.1"
+   fill="none"
+   viewBox="0 0 500 399.99999"
+   height="400"
+   width="500">
+  <path
+     id="rect622"
+     style="opacity:0.293713;fill:url(#paint0_linear-6);stroke:none;stroke-opacity:1"
+     d="m -141.62773,-685.35307 631.46629,-268.04154 c 65.7848,-27.92399 141.22545,2.55601 169.14944,68.34081 l 268.04159,631.46637 c 27.92401,65.7848 -2.556,141.22545 -68.3408,169.149438 L 227.22246,183.60353 c -65.7848,27.924 -141.225448,-2.556 -169.149443,-68.3408 L -209.96855,-516.20363 c -27.92399,-65.78479 2.55601,-141.22545 68.34082,-169.14944 z" />
+  <metadata
+     id="metadata1214">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="svg1210"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="1912"
+     inkscape:cy="67.457064"
+     inkscape:cx="398.17621"
+     inkscape:zoom="0.77613636"
+     showgrid="false"
+     id="namedview1212"
+     inkscape:window-height="1057"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <mask
+     height="880"
+     width="1440"
+     y="0"
+     x="0"
+     maskUnits="userSpaceOnUse"
+     mask-type="alpha"
+     id="mask0">
+    <rect
+       id="rect619"
+       fill="#ffffff"
+       height="880"
+       width="1440"
+       x="0"
+       y="0" />
+  </mask>
+  <defs
+     id="defs1208">
+    <filter
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse"
+       height="165.183"
+       width="165.183"
+       y="59.4086"
+       x="936.409"
+       id="filter0_f">
+      <feFlood
+         id="feFlood1186"
+         result="BackgroundImageFix"
+         flood-opacity="0" />
+      <feBlend
+         id="feBlend1188"
+         result="shape"
+         in2="BackgroundImageFix"
+         in="SourceGraphic"
+         mode="normal" />
+      <feGaussianBlur
+         id="feGaussianBlur1190"
+         result="effect1_foregroundBlur"
+         stdDeviation="6.7957" />
+    </filter>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="208.231"
+       x2="-398.29501"
+       y1="-9.5627203"
+       x1="-143.832"
+       id="paint0_linear">
+      <stop
+         id="stop1193"
+         stop-opacity="0.01"
+         stop-color="#FDFBFB" />
+      <stop
+         id="stop1195"
+         stop-color="#00C4AA"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="924.367"
+       x2="211.349"
+       y1="281.88699"
+       x1="236.515"
+       id="paint1_linear">
+      <stop
+         id="stop1198"
+         stop-opacity="0.01"
+         stop-color="#FDFBFB" />
+      <stop
+         id="stop1200"
+         stop-color="#3B00DD"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       gradientTransform="matrix(-284.768,0,0,-8.12831,1103.54,399.578)"
+       gradientUnits="userSpaceOnUse"
+       r="1"
+       cy="0"
+       cx="0"
+       id="paint2_radial">
+      <stop
+         id="stop1203"
+         stop-color="#CDF7F1"
+         offset="0.00157402" />
+      <stop
+         id="stop1205"
+         stop-color="#5DCFCA"
+         offset="1" />
+    </radialGradient>
+    <linearGradient
+       id="paint0_linear-6"
+       x1="-143.832"
+       y1="-9.5627203"
+       x2="-398.29501"
+       y2="208.231"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="rotate(-23,-244.17867,-644.71884)">
+      <stop
+         stop-color="#FDFBFB"
+         stop-opacity="0.01"
+         id="stop1193-6" />
+      <stop
+         offset="1"
+         stop-color="#00C4AA"
+         id="stop1195-6" />
+    </linearGradient>
+  </defs>
+</svg>

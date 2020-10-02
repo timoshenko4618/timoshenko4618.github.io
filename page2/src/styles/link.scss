@@ -1,0 +1,53 @@
+.link {
+  margin-right: 47px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--comments {
+    color: rgba(0, 0, 0, 0.38);
+
+    &:hover {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  &--location {
+    color: rgba(0, 0, 0, 0.38);
+
+    &:hover {
+      color: #08f;
+    }
+  }
+
+  &--marker {
+    color: rgba(0, 0, 0, 0.38);
+
+    &:hover {
+      color: #00f;
+    }
+  }
+
+  &--phone {
+    color: rgba(0, 0, 0, 0.38);
+
+    &:hover {
+      color: #590;
+    }
+  }
+
+  &--youtube {
+    color: rgba(0, 0, 0, 0.38);
+
+    &:hover {
+      color: #f00;
+    }
+  }
+}
+
+@media screen and (max-width: $width_550) {
+  .link {
+    margin-right: 0;
+  }
+}
