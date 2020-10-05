@@ -6,6 +6,7 @@
   min-height: 100vh;
   margin: 0 auto;
   padding-bottom: 30px;
+  overflow-x: hidden;
   background: radial-gradient(at center, #8b3b69, #20184c);
 
   &__button {
@@ -35,6 +36,8 @@
   &__info {
     max-width: 1260px;
     margin: 0 auto;
+    background: url(assets/img/hand_and_lamp.gif) no-repeat 80% 96%;
+    background-size: 627px;
 
     &-about{
       display: flex;
