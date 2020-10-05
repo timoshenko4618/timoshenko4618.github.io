@@ -1,10 +1,10 @@
 .order {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    padding-right: 30px;
-    font-family: 'Play', sans-serif;
-    color: #fff;
+    // display: flex;
+    // flex-direction: row;
+    // margin-top: 50px;
+    // padding-right: 30px;
+    // font-family: 'Play', sans-serif;
+    // color: #fff;
 
     &__ask-about {
         display: flex;
@@ -35,6 +35,14 @@
         position: relative;
         margin-top: 20px;
         // padding-right: 20%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 1260px;
+        margin: 0 auto; 
+        background: none;
     }
 
     &__input {
@@ -107,6 +115,15 @@
                 opacity: 1;
             }
         }
+    }
+
+    &__table {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        padding-right: 30px;
+        font-family: 'Play', sans-serif;
+        color: #fff;
     }
 }
 

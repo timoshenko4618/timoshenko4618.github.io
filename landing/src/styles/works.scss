@@ -57,6 +57,10 @@
         }   
     }
 
+    &--ads {
+        grid-area: ads;
+    }
+
     &--design {
         grid-area: design;   
     }
@@ -69,8 +73,13 @@
         grid-area: polygraphy;
     }
 
-    &--ads {
-        grid-area: ads;
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 1260px;
+        margin: 0 auto; 
+        background: none;
     }
 
     
@@ -79,7 +88,6 @@
         text-align: center;
         font-size: 37px;
         color:  #ff8791;
+        margin-top: 1.6em;
     }
-
-
 }

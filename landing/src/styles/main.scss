@@ -38,14 +38,6 @@
     margin: 0 auto;
     background: url(assets/img/hand_and_lamp.gif) no-repeat 80% 96%;
     background-size: 627px;
-
-    &-about{
-      display: flex;
-      flex-direction: column;  
-      padding-top: 100px;
-      background: url(assets/img/portrait.gif)  no-repeat 100% 30px;
-      background-size: 480px;
-    }
   }
 
   &__logo {
@@ -56,18 +48,4 @@
     display: flex;
   }
 
-  &__slider {
-    width: 1120px;
-    margin-top: 58px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 50px;
-    position: relative;
-  }
-
-  &__works {
-    display: flex;
-    flex-direction: column;
-    padding: 3em 30px;
-  }
 }

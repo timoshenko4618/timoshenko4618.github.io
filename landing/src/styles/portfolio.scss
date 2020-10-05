@@ -1,0 +1,20 @@
+.portfolio {
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 1260px;
+        margin: 0 auto; 
+        background: none;
+    }
+    
+    &__slider {
+        width: 1120px;
+        margin-top: 58px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 50px;
+        position: relative;
+    }
+
+}

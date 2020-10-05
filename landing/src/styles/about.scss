@@ -1,4 +1,13 @@
 .about {
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 1260px;
+        margin: 0 auto; 
+        background: url(assets/img/portrait.gif)  no-repeat 100% 25%;
+        background-size: 480px;
+    }
     
     &__button{
         position: relative;

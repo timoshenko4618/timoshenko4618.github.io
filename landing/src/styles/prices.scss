@@ -1,15 +1,18 @@
 .prices {
-    display: grid;
-    grid-template-areas: "title form"
-                         "pricelist form ";
-    // width: 100%;
-    grid-template-columns: 62% 38%;
-    grid-template-rows: 8% 92%;
-    gap: 20px;
-    margin-top: 50px;
-    margin-left: 20px;
-    font-family: 'Play', sans-serif;
-    font-size: 12px;
+
+    &__grid {
+        display: grid;
+        grid-template-areas: "title form"
+                            "pricelist form ";
+    
+        grid-template-columns: 62% 38%;
+        grid-template-rows: 8% 92%;
+        gap: 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+        font-family: 'Play', sans-serif;
+        font-size: 12px;
+    }    
 
     &__button-ask {
         position: relative;
@@ -31,6 +34,12 @@
         font-size: 1.6em;
         padding: 40px 30px;
 
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         h1 {
             font-size: 1.3em;
             text-align: center;
@@ -38,8 +47,15 @@
         }
     }
 
+    &__info {
+        display: flex;
+        flex-direction: column;
+        max-width: 1260px;
+        margin: 0 auto; 
+        background: none;
+    }
+
     &__input {
-        // height: 3em;
         background-color: #fff;
         padding: 1.5em 0;
         border-radius: 1em;
@@ -109,6 +125,5 @@
             color: #fff;
         }
     }
-
     
 }

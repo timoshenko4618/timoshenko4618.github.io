@@ -50,7 +50,6 @@ $green: #0a0;
         box-shadow: inset 0 0 0 $width rgba($hover-background-color, 1);
       }
   }    
-
 }
 
 .button {
@@ -59,18 +58,18 @@ $green: #0a0;
   cursor: pointer;
   font-family: 'Play', sans-serif;
 
-  &--about-upper {
-    margin-left: 0; 
+  &--about-upper {   
     @include center;     
     @include button-blue-animated(20em, $blue,  $white, $blue, rgb(70, 70, 195), rgb(245, 186, 78));
+    right: auto;
     font-size: 20px;
     font-weight: normal;
   }  
 
   &--about-lower {
-    margin-right: 0;
     @include center;      
     @include button-blue-animated(18em, $blue,  $white, $blue, rgb(70, 70, 195), rgb(245, 186, 78));
+    left: auto;
     font-size: 20px;
     font-weight: normal;
   }
